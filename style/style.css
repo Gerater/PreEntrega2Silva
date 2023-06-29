@@ -3,6 +3,7 @@
 *{
     font-family: "Poppins", sans-serif;
     font-size: 10px;
+    box-sizing: border-box;
 }
 
 main header nav div{
@@ -86,12 +87,43 @@ section.main .main-text .contenedor-boton button a{
     text-decoration: none;
 }
 
+
+
 #section1{
-    background: url(../imgs/fondochess.svg);
+    background: url(../imgs/fondochess.jpg);
     background-size: cover;
+    height: 110vh;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#section1 .container{
-    color: #009EFF ;
-    font-weight: ;
+#section1 .container p{
+    filter: none;
+    font-style: italic;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 6em;
+    font-weight: 300;
+}
+
+#section2{
+    padding: 60px;
+}
+
+#section2 .contenedor-cartas{
+    justify-content: center;
+    align-items: center;
+}
+
+#section2 .contenedor-cartas .card{
+    margin: 40px;
+    
+}
+
+#section2 .contenedor-cartas .card .card-body .card-text{
+    font-size: 2em;
+}
+
+#call-to-action{
+    position: relative;
 }
