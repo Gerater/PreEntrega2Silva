@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-size: 62.5%;
+    width: 100%;
+    background-image: url(../imgs/fondo.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+    
+}
+
+header{
+    background-color: rgb(220, 154, 88);
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+nav img{
+    width: 8%;
+}
+
+nav ul{
+    display: inline;
+    float: right;
+}
+
+nav a{
+    font-size: 2.5em;
+    margin: 0px 15px;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+nav, main, section{
+    color: rgb(255, 255, 255);
+}
+
+main{
+    font-size: 3.5em;
+    line-height: 3em;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main img{
+    width: 50%;
+}
+
+main, section{
+    background-color: rgb(122, 46, 32);
+}
+
+section{
+    font-size: 2em;
+    line-height: 2em;
+}
+
+#section1 {
+    background-color: rgb(58, 21, 15);
+    font-size: 6em;
+    width: 80%;
+    font-style: italic;
+    margin: auto;
+    padding: 40px 10px;
+}
+
+
+.autor{
+    font-size: 0.5em;
+    font-style: normal;
+    font-weight: 500;
+    color: rgb(255, 218, 218);
+}
+
+#section2{
+    width: 90%;
+    border-radius: 50px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(231, 208, 208);
+    color: black;
+    font-size: 3em;
+    line-height: 3em;
+}
+
+#section2 h2{
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: 700;
+}
+
+#section2 ul{
+    padding: 10px;
+    border-radius: 10px;
+    list-style: none;
+    background-color:  rgb(255, 239, 239);
+
+}
+
+
+aside{
+    font-size: 2em;
+}
+
+aside .contenedor{
+    width: fit-content;
+    margin: auto;
+}
+
+button{
+    text-align: center;
+    font-size: 1em;
+    margin-left: 150px;
+    background-color: rgb(84, 31, 31);
+    color: white;
+    width: fit-content;
+    height: 3em;
+}
+
+.seccion .title{
+    font-weight: 700;
+}
+
+.seccion{
+    width: 80%;
+    margin: auto;
+    font-size: 3em;
+    line-height: 3em;
+    background-color: rgb(91, 40, 40);
+    padding: 20px;
+}
+.seccion ul{
+    list-style-type: none;
+}
+
+
+aside.faq{
+font-size: 1.5em;
+line-height: 1.5em;
+background-color: rgb(255, 216, 216);
+color: black;   
+}
+
+main .faq{
+    border-radius: 20px;
+}
+div.faq {
+    font-style: italic;
+    margin: 10px 0px;
+}
+
+.piezas{
+    background-color: rgb(104, 16, 0);
+    margin: 40px 0px;
+    border-radius: 10px;
+}
+
+.img-container{
+    width: 100%;
+}
+
+.img-container img{
+    width: 200px;
+    margin: auto;   
+}
+
+
+#final-leccion{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(210, 113, 78);
+    color: black;
+    font-size: 3em;
+    padding: 10px;
+    font-weight: 600;
+}
+
+main.sobre-nosotros img{
+    width: 300px;    
+}
+
+img.comunidad {
+    border-radius: 10px;
+    margin-left: 250px;
+}
+
+.dirigir-leccion{
+    width: 80%;
+    margin: auto;
+    font-size: 3em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.dirigir-leccion p{
+    margin-left: 100px;
+}
+
+form button{
+    margin: 0;
+}
+
+footer{
+    background-color: chocolate;
+    font-size: 3em;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
