@@ -7,7 +7,7 @@
 }
 
 main{
-    background: url(../imgs/fondodeajedrez\ 1.svg);
+    background: url(../imgs/fondodeajedrez.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -18,18 +18,25 @@ main header nav div{
     margin: 0;
 }
 
-main header .indice a{
-    color: #FFE4BC;
+main header nav div a{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
+main header .indice a{
+    color: #161731;
+}
+
+main header .indice a:hover{
+    color: #50A6A3;
+    transition: 0.3s;
+
+}
 
 main header .indice a img{
     width: 30px;
     margin-right: 10px;
-}
-
-main header nav .container-fluid{
-    background-color: #00595C;
 }
 
 section.main{
@@ -45,18 +52,19 @@ section.main img{
 }
 section.main .main-titulo{
     font-size: 5em;
+    color: white;
 }
 
 section.main .main-titulo span{
     font-size: 1em;
-    color: #bb3b3b;
+    color: #6a4cb1;
 }
 
 section.main .main-subtitulo{
     font-style: italic;
     font-size: 3em;
-    color: rgb(104, 104, 104);
-    font-weight: 300;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
 }
 
 
@@ -98,11 +106,16 @@ section.main .main-text .contenedor-boton button a{
 
 
 #section1{
-    background: url(../imgs/fondochess.jpg);
-    background-size: cover;
     height: 110vh;
+    background: url(../imgs/fondodegrade.png);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+}
+
+
+#section1 div{
 }
 
 #section1 .container p{
@@ -116,6 +129,15 @@ section.main .main-text .contenedor-boton button a{
 
 #section2{
     padding: 60px;
+    background: url(../imgs/degrade2.png);
+    background-size: cover  ;
+    position: center;
+}
+
+#section2 h2{
+    color: white;
+    font-size: 3em;
+
 }
 
 #section2 .contenedor-cartas{
@@ -128,10 +150,88 @@ section.main .main-text .contenedor-boton button a{
     
 }
 
+#section2 .contenedor-cartas .card .card-body{
+    background-color: #507EA6;
+    border: none;
+}
+
 #section2 .contenedor-cartas .card .card-body .card-text{
     font-size: 2em;
+    text-align: center;
+    color: black;
 }
 
 #call-to-action{
-    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+#call-to-action .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-left: 20px;
+    height: 60%;
+    width: 75%;
+    background-color: #00595C;
+}
+
+#call-to-action .contenedor .call-text{
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#call-to-action .contenedor .call-text p{
+    font-size: 2em;
+}
+
+
+#call-to-action .contenedor a button{
+    border: none;
+    border-radius: 10px;
+    background-color: #240701;
+    margin-left: 20px;
+    padding: 30px;
+    color: white;
+    font-size: 2em;
+    margin-top: 20px;
+
+}
+
+#call-to-action .contenedor-boton-call a button:hover{
+    background-color: #FFE4BC;
+    color: black;
+    transition: 0.3s;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7EA650   ;
+    padding: 20px;
+}
+
+
+footer p{
+    font-size: 3em;
+}
+
+footer img{
+    width: 30px;
+}
+
+footer .icons i{
+    font-size: 3em;
+    margin-left: 10px;
+}
+
+footer .icons i:first-child{
+    margin-left: 30px;
 }
