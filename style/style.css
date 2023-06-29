@@ -6,8 +6,16 @@
     box-sizing: border-box;
 }
 
+main{
+    background: url(../imgs/fondodeajedrez\ 1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 main header nav div{
     padding: 20px;
+    margin: 0;
 }
 
 main header .indice a{
