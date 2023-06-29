@@ -1,224 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
 }
 
-html,
-body{
-    font-size: 62.5%;
-    width: 100%;
-    background-image: url(../imgs/fondo.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    font-family: 'Playfair Display', sans-serif;
-    font-weight: 300;
-    
-}
-
-header{
-    background-color: rgb(220, 154, 88);
-    position: sticky;
-    top: 0;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 40px;
-}
-nav img{
-    width: 8%;
-}
-
-nav ul{
-    display: inline;
-    float: right;
-}
-
-nav a{
-    font-size: 2.5em;
-    margin: 0px 15px;
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    color: black;
-}
-
-nav, main, section{
-    color: rgb(255, 255, 255);
-}
-
-main{
-    font-size: 3.5em;
-    line-height: 3em;
-    width: 80%;
-    margin: auto;
+main header nav div{
     padding: 20px;
-    border-radius: 10px;
 }
 
-main img{
+main header .indice a{
+    color: #FFE4BC;
+}
+
+
+main header .indice a img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+main header nav .container-fluid{
+    background-color: #00595C;
+}
+
+section.main{
+    display: flex;
+    padding: 5em;
+    height: 70%;
+}
+
+
+section.main img{
     width: 50%;
-}
-
-main, section{
-    background-color: rgb(122, 46, 32);
-}
-
-section{
-    font-size: 2em;
-    line-height: 2em;
-}
-
-#section1 {
-    background-color: rgb(58, 21, 15);
-    font-size: 6em;
-    width: 80%;
-    font-style: italic;
-    margin: auto;
-    padding: 40px 10px;
-}
-
-
-.autor{
-    font-size: 0.5em;
-    font-style: normal;
-    font-weight: 500;
-    color: rgb(255, 218, 218);
-}
-
-#section2{
-    width: 90%;
-    border-radius: 50px;
-    margin: auto;
-    padding: 20px;
-    background-color: rgb(231, 208, 208);
-    color: black;
-    font-size: 3em;
-    line-height: 3em;
-}
-
-#section2 h2{
-    font-size: 2em;
-    line-height: 2em;
-    font-weight: 700;
-}
-
-#section2 ul{
-    padding: 10px;
     border-radius: 10px;
-    list-style: none;
-    background-color:  rgb(255, 239, 239);
-
+}
+section.main .main-titulo{
+    font-size: 5em;
 }
 
-
-aside{
-    font-size: 2em;
-}
-
-aside .contenedor{
-    width: fit-content;
-    margin: auto;
-}
-
-button{
-    text-align: center;
+section.main .main-titulo span{
     font-size: 1em;
-    margin-left: 150px;
-    background-color: rgb(84, 31, 31);
-    color: white;
-    width: fit-content;
-    height: 3em;
+    color: #bb3b3b;
 }
 
-.seccion .title{
-    font-weight: 700;
-}
-
-.seccion{
-    width: 80%;
-    margin: auto;
-    font-size: 3em;
-    line-height: 3em;
-    background-color: rgb(91, 40, 40);
-    padding: 20px;
-}
-.seccion ul{
-    list-style-type: none;
-}
-
-
-aside.faq{
-font-size: 1.5em;
-line-height: 1.5em;
-background-color: rgb(255, 216, 216);
-color: black;   
-}
-
-main .faq{
-    border-radius: 20px;
-}
-div.faq {
+section.main .main-subtitulo{
     font-style: italic;
-    margin: 10px 0px;
+    font-size: 3em;
+    color: rgb(104, 104, 104);
+    font-weight: 300;
 }
 
-.piezas{
-    background-color: rgb(104, 16, 0);
-    margin: 40px 0px;
+
+section.main .titulo{
+    margin-bottom: 20px;
+}
+
+section.main .main-text .contenedor-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section.main .main-text .contenedor-boton button{
+    border: none;
     border-radius: 10px;
+    background-color: #240701;
+    padding: 30px;
+    margin-top: 20px;
 }
 
-.img-container{
-    width: 100%;
+section.main .main-text .contenedor-boton button:hover{
+    background-color: #FFE4BC;
+    transition: 0.3s;
 }
 
-.img-container img{
-    width: 200px;
-    margin: auto;   
+section.main .main-text .contenedor-boton button a:hover{
+    color: #240701;
+    transition: 0.3s;
 }
 
-
-#final-leccion{
-    width: 80%;
-    margin: auto;
-    background-color: rgb(210, 113, 78);
-    color: black;
-    font-size: 3em;
-    padding: 10px;
-    font-weight: 600;
+section.main .main-text .contenedor-boton button a{
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
 }
 
-main.sobre-nosotros img{
-    width: 300px;    
+#section1{
+    background: url(../imgs/fondochess.svg);
+    background-size: cover;
 }
 
-img.comunidad {
-    border-radius: 10px;
-    margin-left: 250px;
-}
-
-.dirigir-leccion{
-    width: 80%;
-    margin: auto;
-    font-size: 3em;
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-.dirigir-leccion p{
-    margin-left: 100px;
-}
-
-form button{
-    margin: 0;
-}
-
-footer{
-    background-color: chocolate;
-    font-size: 3em;
-    height: 40px;
-    width: 100%;
-    text-align: center;
+#section1 .container{
+    color: #009EFF ;
+    font-weight: ;
 }
