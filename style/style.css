@@ -11,6 +11,8 @@ main{
     background: url(../imgs/fondodeajedrez.png);
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 
 }
 
@@ -107,6 +109,8 @@ section.main .main-text .contenedor-boton button a{
 
 
 #section1{
+    position: relative;
+    z-index: 2;
     height: 110vh;
     background: url(../imgs/fondodegrade.png);
     background-size: cover;
@@ -310,7 +314,6 @@ section.juego ul li strong{
 
 footer{
     display: flex;
-    z-index: 3;
     justify-content: center;
     align-items: center;
     background-color: #7EA650   ;
@@ -333,4 +336,158 @@ footer .icons i{
 
 footer .icons i:first-child{
     margin-left: 30px;
+}
+
+
+    @media screen and (max-width: 769px) {
+        section.main{
+            padding: 30px;
+            height: auto;
+        }
+        section.main .main-titulo{
+            font-size: 3em;
+        }
+        section.main .main-subtitulo{
+            font-size: 1.5em;
+            }
+        section.main{
+            display: flex;
+            flex-direction: column;
+            overflow:visible;
+            gap: 20px;
+            font-size: 0.01em;
+        }
+        #section1 .container p.display-3{
+            font-size: 3em;
+        }
+
+        #call-to-action .contenedor{
+            flex-direction: column;
+            width: 70%;
+            height: fit-content;
+            padding: 20px;
+        }
+        #call-to-action .contenedor p{
+            margin: 0;
+            width: 100%;
+        }
+}
+
+@media screen and (max-width: 1358px) {
+    section.main{
+        margin: 100px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section.main .main-titulo{
+        font-size: 3em;
+    }
+    section.main .main-subtitulo{
+        font-size: 2em;
+        color: white;
+        }
+    section.main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    #section1 .container p.display-3{
+        font-size: 3em;
+    }
+
+    #call-to-action .contenedor{
+        flex-direction: column;
+        width: 70%;
+        height: fit-content;
+        padding: 20px;
+    }
+    #call-to-action .contenedor p{
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    main section.main{
+        margin: 10px;
+        padding: 10px;
+    }
+    #section2 .container{
+        height: 280vh;
+    }
+
+    #call-to-action{
+        margin-top: 0;
+        height: 150vh;
+    }
+
+    #call-to-action .contenedor{
+        background: none;
+        width: 100%;
+    }
+    #call-to-action .contenedor .call-text{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    main section.main{
+        padding: 15px;
+        margin: 0;
+    }
+
+    main section.main img{
+        width: 80%;
+    }
+    section.main .main-titulo{
+        font-size: 2em;
+    }
+    section.main .main-subtitulo{
+        font-size: 1.5em;
+        }
+    section.main{
+        display: flex;
+        flex-direction: column;
+        overflow:visible;
+        gap: 20px;
+        font-size: 0.01em;
+    }
+    #section1 .container p{
+        font-size: 3em;
+    }
+
+    #section2 .contenedor-cartas{
+        height: 280vh;
+    }
+
+    #section2 .contenedor-cartas .col .card{
+        width: 100%;
+        margin: 20px 0;
+    }
+    #call-to-action{
+        height: 150vh;
+    }
+
+    #call-to-action .contenedor{
+        flex-direction: column;
+        background: none;
+        width: 300px;
+        height: fit-content;
+        padding: 20px;
+    }
+    #call-to-action .contenedor p{
+        font-size: .5;
+        width: 100%;
+    }
+    footer .icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
