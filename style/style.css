@@ -13,7 +13,11 @@ main{
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
+    padding: 40px 60px;
+}
 
+main header {
+    padding: 40px 60px;
 }
 
 main header nav div{
@@ -339,10 +343,13 @@ footer .icons i:first-child{
 }
 
 
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: 768px) {
+        main header{
+            padding: 0;
+        }
         section.main{
-            padding: 30px;
-            height: auto;
+            padding: 0;
+            margin: 0;            
         }
         section.main .main-titulo{
             font-size: 3em;
@@ -373,10 +380,26 @@ footer .icons i:first-child{
         }
 }
 
+@media screen and (max-width: 1024px) {
+    main{    
+        height: auto;
+        padding: 0;
+        background-size: cover;
+        margin: 0;
+    }
+    main .main {
+        padding: 0;
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 1358px) {
+
+    main{
+        padding-bottom: 20px;
+    }
     section.main{
         margin: 100px;
-        padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -412,10 +435,21 @@ footer .icons i:first-child{
 }
 
 @media screen and (max-width: 425px) {
-    main section.main{
-        margin: 10px;
-        padding: 10px;
+    main header{
+       padding: 0; 
     }
+    main section.main{
+        padding: 0;
+        margin: 0
+    }
+
+
+    main section.main .main-text{
+        font-size: 1em;
+        padding-top: 40px;
+        
+    }
+
     #section2 .container{
         height: 280vh;
     }
@@ -436,9 +470,18 @@ footer .icons i:first-child{
 }
 
 @media screen and (max-width: 320px) {
-    main section.main{
-        padding: 15px;
+
+    main{
+        padding: 0 0 20px 0;
         margin: 0;
+    }
+    main section.main{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    main section.main .main-text{
+        padding-top: 0;
     }
 
     main section.main img{
